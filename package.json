@@ -1,0 +1,20 @@
+{
+  "name": "backend_dev_challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node ./src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Yuri Kushnir",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/node": "14.0.6",
+    "config": "3.3.1",
+    "mongoose": "5.9.16",
+    "ts-node": "8.10.2",
+    "typescript": "3.9.3"
+  }
+}
