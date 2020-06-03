@@ -1,5 +1,8 @@
 {
   "mongoDb": {
     "connectionString": ""
+  },
+  "dataFile": {
+    "filePath": "data/"
   }
 }

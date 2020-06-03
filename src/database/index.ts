@@ -1,13 +1,11 @@
 import * as mongoose from 'mongoose';
-import * as config from 'config';
 
 export default {
     init
 }
 
-async function init() {
+async function init(connectionString) {
     try {
-        const connectionString = config.mongoDb.connectionString;
         const options = {
             useNewUrlParser: true,
             useUnifiedTopology: true,

@@ -1,10 +1,8 @@
-import * as mongoose from 'mongoose';
+import {Schema, model, Types} from 'mongoose';
 
-const ObjectId = mongoose.Schema.ObjectId;
-
-const schema = new mongoose.Schema({
+const schema = new Schema({
     id: {
-        type: ObjectId,
+        type: Types.ObjectId,
         required: true
     },
     name: {
@@ -17,4 +15,4 @@ const schema = new mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model('Email', schema);
+export default model('Email', schema);

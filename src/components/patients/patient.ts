@@ -1,6 +1,6 @@
-import * as mongoose from 'mongoose';
+import {Schema, model} from 'mongoose';
 
-const schema = new mongoose.Schema({
+const schema = new Schema({
     programIdentifier: {
         type: Number
     },
@@ -45,12 +45,12 @@ const schema = new mongoose.Schema({
         unique: true
     },
     consent: {
-        type: Boolean,
-        default: false
+        type: String,
+        default: 'N'
     },
     mobilePhone: {
         type: String
     }
 });
 
-module.exports = mongoose.model('Patient', schema);
+export default model('Patient', schema);
