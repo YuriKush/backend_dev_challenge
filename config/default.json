@@ -4,5 +4,23 @@
   },
   "dataFile": {
     "filePath": "data/"
-  }
+  },
+  "emails": [
+    {
+      "name": "Day 1",
+      "daysDelay": 1
+    },
+    {
+      "name": "Day 2",
+      "daysDelay": 2
+    },
+    {
+      "name": "Day 3",
+      "daysDelay": 3
+    },
+    {
+      "name": "Day 4",
+      "daysDelay": 4
+    }
+  ]
 }

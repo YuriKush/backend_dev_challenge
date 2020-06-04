@@ -1,8 +1,8 @@
 import {patientsController} from "./patientsController";
-import * as patientsRepository from "./patientsDAL";
+import * as repository from "./patientsDAL";
 
 export default class Patients extends patientsController{
     constructor() {
-        super({repository: patientsRepository});
+        super({repository});
     }
 }
