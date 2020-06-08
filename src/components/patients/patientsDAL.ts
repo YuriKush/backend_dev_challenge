@@ -5,7 +5,7 @@ export const schema = Patient.schema;
 export async function putPatient (data){
     try{
         await Patient.updateOne(
-            { email: data.email },
+            { memberId: parseInt(data.memberId) },
             data,
             { upsert: true }
         );

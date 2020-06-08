@@ -11,7 +11,8 @@ const schema = new Schema({
         type: Number
     },
     memberId: {
-        type: Number
+        type: Number,
+        unique: true
     },
     firstName: {
         type: String
@@ -41,8 +42,7 @@ const schema = new Schema({
         type: String
     },
     email: {
-        type: String,
-        unique: true
+        type: String
     },
     consent: {
         type: String,

@@ -3,7 +3,7 @@
     "connectionString": ""
   },
   "dataFile": {
-    "filePath": "data/"
+    "filePath": "data/patients.csv"
   },
   "emails": [
     {
