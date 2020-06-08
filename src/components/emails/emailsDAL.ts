@@ -1,4 +1,5 @@
 import Email from './email';
+import Patient from "../patients/patient";
 
 export interface emailType {
     id: any,
@@ -13,4 +14,9 @@ export async function addEmail(data: emailType) {
     }catch (err) {
         console.error(err);
     }
+}
+
+export function getEmails(filter) {
+    const query = Email.find(filter)
+    return query.exec();
 }

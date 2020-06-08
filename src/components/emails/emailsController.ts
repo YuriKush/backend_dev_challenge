@@ -22,4 +22,8 @@ export class emailsController {
             console.error(err);
         }
     }
+    getEmailsByPatientId(id) {
+        return this.dependencies.repository.getEmails({id});
+    }
 }
+

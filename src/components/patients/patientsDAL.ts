@@ -24,3 +24,7 @@ export function getPatients(filter: filterParameters) {
     const query = Patient.find(filter)
     return query.exec();
 }
+
+export function getPatientsCount() {
+    return Patient.countDocuments();
+}
