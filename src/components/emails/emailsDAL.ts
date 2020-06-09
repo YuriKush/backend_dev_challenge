@@ -1,5 +1,4 @@
 import Email from './email';
-import Patient from "../patients/patient";
 
 export interface emailType {
     id: any,
