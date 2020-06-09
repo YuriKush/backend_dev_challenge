@@ -1,3 +1,4 @@
+process.env.NODE_ENV = "";
 import * as config from 'config';
 import db from '../database';
 import Patients from "../components/patients";

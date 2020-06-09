@@ -5,7 +5,7 @@
   "scripts": {
     "import_patients": "ts-node ./src/index.ts importPatients",
     "schedule_emails": "ts-node ./src/index.ts scheduleEmails",
-    "test": "NODE_ENV= npx jest --detectOpenHandles"
+    "test": "npx jest --detectOpenHandles"
   },
   "keywords": [],
   "author": "Yuri Kushnir",

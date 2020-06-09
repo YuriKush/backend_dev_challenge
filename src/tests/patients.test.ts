@@ -1,3 +1,4 @@
+process.env.NODE_ENV = "";
 import * as config from 'config';
 import {parseFile} from "@fast-csv/parse";
 import * as _ from 'lodash';

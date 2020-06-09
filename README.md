@@ -57,17 +57,17 @@ You can edit existing configuration file config/default.json or create your own 
 To import patients from a CSV file use the following command 
 (patients with the same member ID will be updated):
 ```shell
-$ npm import_patients
+$ npm run import_patients
 ```
 
 To schedule emails for patients who have CONSENT = 'Y' use the following command:
 ```shell
-$ npm schedule_emails
+$ npm run schedule_emails
 ```
 
 To run tests use the following command:
 ```shell
-$ npm test
+$ npm run test
 ```
 
 Enjoy ;)
