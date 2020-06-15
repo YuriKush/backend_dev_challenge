@@ -13,6 +13,9 @@ describe('Emails tests:', () => {
     beforeAll(async () => {
         await db.init(config.mongoDb.connectionString);
     })
+    afterAll(async () => {
+        await db.close();
+    })
 
     test('Verify Emails were created in Emails Collection for patients who have CONSENT as Y and verify that they are correct', async () => {
         let consentedPatients = await patients.getConsentedPatients();

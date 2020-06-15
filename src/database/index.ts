@@ -1,7 +1,8 @@
 import * as mongoose from 'mongoose';
 
 export default {
-    init
+    init,
+    close
 }
 
 async function init(connectionString) {
@@ -17,5 +18,14 @@ async function init(connectionString) {
     } catch (err) {
         console.error('Could not connect to MongoDB!');
         process.exit(1);
+    }
+}
+
+async function close() {
+    try {
+        await mongoose.connection.close();
+        console.log("MongoDb is disconnected");
+    } catch (err) {
+        console.log(err);
     }
 }

@@ -7,8 +7,9 @@ async function start(){
     return router();
 }
 
-function end(message){
+async function end(message){
     console.log(message);
+    await db.close();
     process.exit(0);
 }
 

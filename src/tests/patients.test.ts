@@ -13,6 +13,9 @@ describe('Patients tests:', () => {
     beforeAll(async () => {
         await db.init(config.mongoDb.connectionString);
     })
+    afterAll(async () => {
+        await db.close();
+    })
 
     test('Verify the data in flat file matches the data in Patients collection', async () => {
         const fields = ['programIdentifier', 'dataSource', 'cardNumber', 'memberId', 'firstName', 'lastName', 'dateOfBirth',
