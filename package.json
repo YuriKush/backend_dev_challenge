@@ -16,7 +16,7 @@
     "config": "3.3.1",
     "fast-csv": "4.3.0",
     "lodash": "4.17.15",
-    "moment": "2.26.0",
+    "moment": "2.29.4",
     "mongoose": "5.9.16",
     "ts-node": "8.10.2",
     "typescript": "3.9.3"
